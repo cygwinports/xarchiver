@@ -1,0 +1,127 @@
+xarchiver
+------------------------------------------
+Xarchiver is a Desktop Environment independent archiver frontend. All
+common archive types are supported. RPM and ISO are handled without rpm
+or isodump executables. To run it you only need GTK+2 libraries and
+obviously the various rar, arj and 7z for these archives types.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libgdk_pixbuf2.0_0-2.14.7-2
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-2
+  libintl8-0.17-2
+  libpango1.0_0-1.22.4-1
+  bzip2
+  cpio
+  gzip
+  lha
+  p7zip
+  shared-mime-info
+  tar
+  unzip
+  zip
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-3
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+  xfce4-dev-tools-4.5.99.1-1
+
+Canonical website:
+  http://xarchiver.xfce.org/
+
+Canonical download:
+  http://download.sourceforge.net/xarchiver/
+
+-------------------------------------------
+
+Build instructions:
+  unpack xarchiver-0.5.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./xarchiver-0.5.2-X.cygport all
+
+This will create:
+  /usr/src/xarchiver-0.5.2-X-src.tar.bz2
+  /usr/src/xarchiver-0.5.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/xarchiver.sh
+  /usr/bin/xarchiver.exe
+  /usr/lib/thunar-archive-plugin/xarchiver.tap
+  /usr/share/applications/xarchiver.desktop
+  /usr/share/doc/xarchiver/AUTHORS
+  /usr/share/doc/xarchiver/COPYING
+  /usr/share/doc/xarchiver/ChangeLog
+  /usr/share/doc/xarchiver/INSTALL
+  /usr/share/doc/xarchiver/NEWS
+  /usr/share/doc/xarchiver/README
+  /usr/share/doc/xarchiver/TODO
+  /usr/share/doc/xarchiver/html/images/add_dialog.png
+  /usr/share/doc/xarchiver/html/images/archive_comment_dialog.png
+  /usr/share/doc/xarchiver/html/images/archive_properties.png
+  /usr/share/doc/xarchiver/html/images/extract_dialog.png
+  /usr/share/doc/xarchiver/html/images/multi_extract_dialog.png
+  /usr/share/doc/xarchiver/html/images/new_dialog.png
+  /usr/share/doc/xarchiver/html/images/password_dialog.png
+  /usr/share/doc/xarchiver/html/images/pref_dialog.png
+  /usr/share/icons/hicolor/16x16/apps/xarchiver.png
+  /usr/share/icons/hicolor/24x24/apps/xarchiver.png
+  /usr/share/icons/hicolor/48x48/apps/xarchiver.png
+  /usr/share/icons/hicolor/scalable/apps/xarchiver.svg
+  /usr/share/locale/bg/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/ca/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/cs/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/da/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/de/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/el/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/es/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/eu/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/fi/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/fr/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/hu/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/id/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/ja/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/nb_NO/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/nl/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/pl/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/pt_PT/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/ru/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/sq/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/sv/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/tr/LC_MESSAGES/xarchiver.mo
+  /usr/share/locale/uk/LC_MESSAGES/xarchiver.mo
+  /usr/share/pixmaps/xarchiver/xarchiver-add.png
+  /usr/share/pixmaps/xarchiver/xarchiver-extract.png
+  /usr/share/pixmaps/xarchiver/xarchiver-html.png
+
+------------------
+
+Port Notes:
+
+----- version 0.5.2-1 -----
+Version bump.
+Includes stack smashing patch from Gentoo.
+
+----- version 0.4.6-1 -----
+Initial release of Xfce 4.4 for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
