@@ -6,12 +6,13 @@ or isodump executables. To run it you only need GTK+2 libraries and
 obviously the various rar, arj and 7z for these archives types.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libgdk_pixbuf2.0_0-2.14.7-2
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-2
-  libintl8-0.17-2
-  libpango1.0_0-1.22.4-1
+  cygwin-1.7.0-50
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.2-1
+  libglib2.0_0-2.20.3-1
+  libgtk2.0_0-2.16.2-1
+  libintl8-0.17-11
+  libpango1.0_0-1.24.2-1
   bzip2
   cpio
   gzip
@@ -20,22 +21,23 @@ Runtime requirements:
   shared-mime-info
   tar
   unzip
+  xz
   zip
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  cygport-0.9.7-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  intltool-0.40.6-1
+  libtool-2.2.7a-13
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
-  xfce4-dev-tools-4.5.99.1-1
+  xfce4-dev-tools-4.6.1-1
 
 Canonical website:
   http://xarchiver.xfce.org/
@@ -115,12 +117,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.5.2-1 -----
-Version bump.
-Includes stack smashing patch from Gentoo.
-
------ version 0.4.6-1 -----
-Initial release of Xfce 4.4 for Cygwin.
+----- version 0.5.2-10 -----
+Initial release of Xfce 4.6 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
