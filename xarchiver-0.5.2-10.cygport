@@ -1,6 +1,0 @@
-inherit xfce4
-
-DESCRIPTION="Xfce4 archive manager"
-HOMEPAGE="http://xarchiver.xfce.org/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
-PATCH_URI="mirror://portage/app-arch/${PN}/files/${P}-stack-smash.patch"

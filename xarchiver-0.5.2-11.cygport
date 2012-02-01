@@ -1,0 +1,15 @@
+inherit xfce4
+
+DESCRIPTION="Xfce4 archive manager"
+HOMEPAGE="http://xarchiver.xfce.org/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+
+PATCH_URI="
+	fedora/${P}-no-donators-menu.patch
+	fedora/${P}-default-archive-format.patch
+	fedora/${P}-add_xz_support.patch
+	fedora/${P}-rpm2cpio.patch
+	fedora/${P}-segfault-open-with.patch
+	fedora/${P}-fix_7z_support.patch
+	fedora/${P}-drag-n-drop_escaped_path.patch
+"
