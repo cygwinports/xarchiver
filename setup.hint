@@ -1,8 +1,0 @@
-category: Archive Gnome
-requires: libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 arj binutils bzip2 cpio gzip lha p7zip shared-mime-info tar unzip xz zip
-sdesc: "Xfce4 archive manager"
-ldesc: "Xarchiver is a Desktop Environment independent archiver 
-frontend. All common archive types are supported. RPM and ISO are 
-handled without rpm or isodump executables. To run it you only need 
-GTK+2 libraries and obviously the various rar, arj and 7z for these 
-archives types."
