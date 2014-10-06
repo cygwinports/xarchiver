@@ -9,7 +9,7 @@ DESCRIPTION="Xarchiver is a Desktop Environment independent archiver frontend.
 All common archive types are supported. RPM and ISO are handled without rpm or
 isodump executables. To run it you only need GTK+2 libraries and obviously the
 various rar, arj and 7z for these archives types."
-REQUIRES="arj binutils bzip2 cpio gzip lha p7zip tar unzip xz zip"
+REQUIRES="arj binutils bzip2 cpio gzip p7zip tar unzip xz zip"
 HOMEPAGE="http://xarchiver.xfce.org/"
 SRC_URI="mirror://sourceforge/xarchiver/${NAME}-${VERSION}.tar.bz2"
 
