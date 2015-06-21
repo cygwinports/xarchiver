@@ -1,24 +1,23 @@
 inherit xfce4
 
 NAME="xarchiver"
-VERSION=0.5.2
-RELEASE=11
-CATEGORY="Archive Xfce"
-SUMMARY="Xfce4 archive manager"
+VERSION=0.5.4
+RELEASE=1
+CATEGORY="Archive"
+SUMMARY="GTK+ archive manager"
 DESCRIPTION="Xarchiver is a Desktop Environment independent archiver frontend.
 All common archive types are supported. RPM and ISO are handled without rpm or
 isodump executables. To run it you only need GTK+2 libraries and obviously the
 various rar, arj and 7z for these archives types."
-REQUIRES="arj binutils bzip2 cpio gzip p7zip tar unzip xz zip"
+REQUIRES="arj binutils bzip2 cpio gzip lzop p7zip tar unzip xz zip"
 HOMEPAGE="http://xarchiver.xfce.org/"
 SRC_URI="mirror://sourceforge/xarchiver/${NAME}-${VERSION}.tar.bz2"
-
 PATCH_URI="
-	fedora/${P}-no-donators-menu.patch
-	fedora/${P}-default-archive-format.patch
-	fedora/${P}-add_xz_support.patch
-	fedora/${P}-rpm2cpio.patch
-	fedora/${P}-segfault-open-with.patch
-	fedora/${P}-fix_7z_support.patch
-	fedora/${P}-drag-n-drop_escaped_path.patch
+	fedora/xarchiver-0.5.4-version-fix.patch
+	0.5.4-mimetypes.patch
 "
+
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+	make distclean
+}
